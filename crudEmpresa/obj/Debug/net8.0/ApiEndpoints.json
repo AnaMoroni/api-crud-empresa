@@ -1,0 +1,127 @@
+[
+  {
+    "ContainingType": "crudEmpresa.Controllers.PrincipalController",
+    "Method": "Principal",
+    "RelativePath": "",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "crudEmpresa.Controllers.PrincipalController",
+    "Method": "Autor",
+    "RelativePath": "autor",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "crudEmpresa.Controllers.EmpresaController",
+    "Method": "BuscarTodos",
+    "RelativePath": "empresas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "search",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "razaoSocial",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "nomeFantasia",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "cnpj",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "crudEmpresa.Controllers.EmpresaController",
+    "Method": "Criar",
+    "RelativePath": "empresas",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "novaEmpresa",
+        "Type": "crudEmpresa.Models.Dtos.EmpresaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "crudEmpresa.Controllers.EmpresaController",
+    "Method": "Atualizar",
+    "RelativePath": "empresas/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "atualizacaoEmpresa",
+        "Type": "crudEmpresa.Models.Dtos.EmpresaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "crudEmpresa.Controllers.EmpresaController",
+    "Method": "Remover",
+    "RelativePath": "empresas/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "crudEmpresa.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[crudEmpresa.WeatherForecast, crudEmpresa, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]
